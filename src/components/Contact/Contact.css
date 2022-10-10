@@ -1,0 +1,92 @@
+#contact{
+      /* border: 2px solid red; */
+      width: 100vw;
+      height: fit-content;
+      display: flex;
+      justify-content: center;
+}
+
+#contact .contact-wrape{
+      /* border: 2px solid green; */
+      width: 90vw;
+      height: fit-content;
+      padding-bottom: 3rem;
+}
+#contact .contact-wrape .contact-heading{
+      text-align: center;
+      height: 8rem;
+      margin-bottom: 2rem;
+
+}
+
+#contact .contact-wrape .contact-heading h2{
+     font-size: 13px;
+     padding: 0.5rem 20px;
+     border: 2PX ;
+     margin: 1.5rem auto;
+     width: fit-content;
+     font-family: 'Open Sans', sans-serif;
+     color: #8FC04E;
+     font-weight: 700;
+     letter-spacing: 1.5px;
+     background-color: #F3F8EC;
+     border-radius: 20px;
+}
+#contact .contact-wrape .contact-heading h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    color: #444444;
+    font-weight: 700;
+
+}
+#contact .contact-wrape .contact-heading span{
+    color: #8FC04E;
+
+}
+
+.location .grLoacation, 
+.contact-email .fiMail{
+    color: #fff;
+    background-color: #8FC04E;
+  
+     height: fit-content;
+     padding: 0.6rem 0.7rem 0.5rem;
+     border-radius: 50%;
+     margin: 0 2rem;
+}
+.location .grLoacation:hover, 
+.contact-email .fiMail:hover{
+   color: #F3F8EC;
+   background-color: #b1c694;
+   
+ 
+  
+}
+
+.location , 
+.contact-email{
+    display: flex;  
+    margin: 2rem;
+
+}
+@media screen and (max-width: 493px) {
+    
+    .location , 
+.contact-email{     
+    margin: 0.5rem 1.5rem;
+}
+.location .grLoacation, 
+.contact-email .fiMail{
+     margin: 0 0.5rem;
+}
+#contact .contact-wrape{
+    width: 98vw;   
+}
+#contact .contact-wrape .contact-heading h2{
+    padding: 0.5rem 20px;
+}
+#contact .contact-wrape .contact-heading span{
+       margin: auto auto auto 1rem;
+}
+
+}

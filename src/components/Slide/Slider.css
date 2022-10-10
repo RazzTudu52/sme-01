@@ -1,0 +1,130 @@
+
+.slide-section {
+  width: 100%;
+  margin: auto;
+}
+
+
+.slide-section-center {
+  margin: 0 auto;
+  width: 100vw;
+  height: 450px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+.slide-section-center article {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+  height: 100%;
+  opacity: 0;
+  transition: all 0.3s linear;
+
+}
+
+.slide-section-center article.activeSlide {
+  opacity: 1;
+  transform: translateX(0);
+}
+.slide-section-center article.lastSlide {
+  transform: translateX(-100%);
+}
+article.nextSlide {
+  transform: translateX(100%);
+}
+
+.slide-section-center .person-img {
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 6px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.slide-section-center article h4 {
+  text-transform: uppercase;
+  color: aliceblue;
+  margin-bottom: 0.25rem;
+  letter-spacing: 0.1rem;
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+
+.slide-section-center .title {
+  text-transform: capitalize;
+  margin-bottom: 0.75rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.slide-section-center .text {
+  max-width: 35em;
+  margin: 0 auto;
+  margin-top: 2rem;
+  line-height: 2;
+  color: rgba(97, 125, 152, 0.649);
+}
+
+.slide-prev,.slide-next
+ {
+  position: absolute;
+  top: 200px;
+  transform: translateY(-50%);
+  background: rgba(97, 125, 152, 0.7);
+  color: #fff;
+  width: 1.25rem;
+  height: 1.25rem;
+  display: grid;
+  place-items: center;
+  border-color: transparent;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.slide-prev:hover,
+.slide-next:hover {
+  background: rgba(0, 0, 0, 0.47);
+}
+
+.slide-prev{
+  left: 2%;
+}
+
+.slide-next{
+  left: 93%;
+}
+
+@media (min-width: 800px) {
+  .slide-prev,
+  .slide-next {
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.5rem;
+  }
+  
+}
+
+/* .slide-dot {
+  position: relative;
+  top: 90%;
+  left: 50vw;
+  transform: translateX(-50%);
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: rgb(187, 187, 187);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+} */

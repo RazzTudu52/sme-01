@@ -1,0 +1,280 @@
+
+.navBar{
+  display: flex;
+  flex-direction: column;
+}
+
+.contact01{
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  background-color: #202020;
+  padding: 5px;
+  height: 2rem;
+}
+.contact01 span{    
+  margin: 0 2.5rem;
+  display: flex;
+}
+.contact01 span .email{     
+ color: #fff;
+ margin: 0 0.3rem;
+ font-weight: 400;
+ font-family: 'Open Sans', sans-serif;
+ font-size: 14px;
+}
+.navBar .contact01 .icons h4{
+  cursor: pointer;
+  margin: 0 0.3rem;
+  font-size: 14px;
+  color: #cccccc;
+}
+.navBar .contact01 .icons h4:hover{ 
+  color: #fff;
+}
+.navBar .contact01 .icons { 
+  display: flex;
+  margin: 0 3rem;
+}
+.fiMail{
+  margin: 4px;
+  position: relative;
+  top: -10%;
+}
+.emailLink{
+  font-size: 14px;
+   text-decoration: none;
+   color: #fff;
+}
+@media screen and (max-width: 600px) {
+  .navBar .contact01 .icons{
+      display: none;
+  } 
+  .navBar .contact01 {
+      text-align: center  ;
+      justify-content: center;
+  } 
+  nav picture {
+    margin-left: 0;
+  }
+  nav picture img {
+    width: 2rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+     nav-img{
+      width: 256px ;
+       display: flex;
+     justify-content: left;
+     }
+     nav picture img {
+      width: 2rem;
+    }
+
+}
+
+
+
+
+/* navBar start*/
+
+
+
+
+
+
+/* **** Bar Animation  ******* */
+
+.menu-container {
+  display: inline-block;
+  cursor: pointer;
+  margin: auto 2rem;
+  display: none;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 20px;
+  height: 3px;
+  background-color: rgb(255, 255, 255);
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.menu-container-change{
+  margin: auto 2rem;
+  padding: 5px;
+  cursor: pointer;
+}
+.menu-container-change .bar1 {
+  transform: translate(0, 9px) rotate(-45deg);
+}
+
+.menu-container-change .bar2 {opacity: 0;}
+
+.menu-container-change .bar3 {
+  transform: translate(0, -9px) rotate(45deg);
+}
+/* **** Bar Animation  ******* */
+
+
+nav{
+  top: 0px;
+  width: 100vw;
+  display: flex;
+  background-color: #000;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.sticky{
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.6);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+nav picture img{
+    width: 8rem;
+}
+
+.navLi{
+   color: aliceblue;
+   text-decoration: none;
+   margin: auto 0.5rem;
+   /* gap: 2rem; */
+}
+.navLi .navlink{
+    margin: 0 1rem;
+   cursor: pointer;
+   color: aliceblue;
+   text-decoration: none;
+   font-family: 'Open Sans', sans-serif;
+   text-decoration: none;
+   color: #fff;
+}
+
+.navLi .navlink:hover{
+   color: #8FC04E;
+   text-decoration: none;
+   font-family: 'Open Sans', sans-serif;
+   color: var(--primary-color);
+}
+
+.navLi .active{
+   color: #8FC04E;
+   text-decoration: none;
+   font-family: 'Open Sans', sans-serif;
+}
+
+
+.navUl{
+ display: flex;
+ list-style: none;   
+ margin-right: 2rem;
+
+}
+
+
+.nav-links{
+  margin-left: auto;  
+ 
+}
+
+#teamLi{
+  position: relative;
+  /* border: 0.5px solid orange; */
+  /* top: 40px; */
+
+}
+#teamLi h4{
+  position: absolute;
+  /* border: 0.5px solid orange; */
+  top: -50%;
+  color: #fff;
+  left: 100%;
+  transform: translateY(50%);
+  cursor: pointer;
+}
+#teamLi h4:hover{
+  color: #8FC04E;
+}
+.batchNav{
+   position: absolute;
+   /* border: 0.2px solid red; */
+   width: 7rem;
+   top: 200%;
+   height: fit-content;
+   list-style: none;
+   background-color: rgba(0,0,0, 0.9);
+   box-shadow: 0px 5px 10px rgba(0,0,0,0.6);
+   border-radius: 5px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.batchLi{
+   font-size: 0.9rem;
+    margin: 0.5rem 0;
+}
+.batchLi a{
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+
+}
+.batchLi a:hover{
+    color: #8FC04E;
+
+}
+
+
+.batchLink{
+  text-decoration: none;
+  color: #fff;
+}
+
+@media screen and (max-width: 880px) {
+
+  .nav-links{
+      height: 0%;
+      width: 100%;
+      position: absolute;
+      z-index: 1;
+      top: 100%;
+      left: 0;
+      background-color: rgba(0,0,0, 0.97);
+
+      overflow-y: hidden;
+      transition: 0.5s;
+  }
+  .nav-X{
+    height: 0px;
+}
+.nav-Y{
+    height: 90vh;
+}
+  .nav-links .navUl{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: static    ;
+  }
+
+  .menu-container{
+       display: block;
+  }
+  .navLi{
+
+    margin-top: 3rem;
+  }
+
+  .batchNav{
+    position: absolute;
+    border: 1px solid black ;
+    background-color: transparent;
+    left: 100%;
+    top: 100%;
+ }
+
+}
+
+ 

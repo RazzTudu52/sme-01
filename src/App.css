@@ -1,0 +1,49 @@
+/* 
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+
+
+
+
+.headLine01{
+  font-size: 13px;
+  padding: 0.5rem 20px;  
+  font-family: 'Open Sans', sans-serif;
+  color: #8FC04E;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  background-color: #E9F3DD;
+  border-radius: 20px;
+  width: fit-content;
+  position: relative;
+  transform: translateX(-50%);
+  left: 50%;
+  margin: 0.7rem 0 1rem;
+} 
+
+
+
+.headLine02{
+  font-family: 'Raleway', sans-serif;
+  font-size: 2rem;
+  color: #444444;
+  font-weight: 700;
+  margin: 0.7rem 0 1.5rem;
+} */
+
+
+.headSpsn{
+  color: #8FC04E;
+}
